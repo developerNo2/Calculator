@@ -1,0 +1,20 @@
+<template>
+    
+    <lightning-card> <br/> 
+      <div class="slds-text-align_center"><strong>Calculator</strong></div>
+    <div class="slds-box slds-theme_shade">  
+     <lightning-input type="number" name="input2" label="Number 1" onchange={handleNumberOeChange} value={firstNumber}></lightning-input>  
+     <lightning-input type="number" name="input2" label="Number 2" onchange={handleNumberTwoChange} value={secondNumber}></lightning-input>  
+   </div>  
+   <div class="slds-box slds-theme_shade">  
+     <b>Result is : </b>  
+      <P>{resultValue}</p>  
+   </div>  
+    <div class="slds-box slds-theme_shade">  
+      <lightning-button-icon icon-name="utility:add"  variant="brand" alternative-text="Addition" class="slds-var-m-left_xx-large" onclick={addition}></lightning-button-icon>
+      <lightning-button-icon icon-name="utility:close"  variant="brand" alternative-text="Multification" class="slds-var-m-left_xx-large"  onclick={multification}></lightning-button-icon>
+      <lightning-button-icon icon-name="utility:dash"  variant="brand" alternative-text="Subtraction"  class="slds-var-m-left_xx-large" onclick={subtraction}></lightning-button-icon>
+      <lightning-button-icon icon-name="utility:/"  variant="brand" alternative-text="Divison" class="slds-var-m-left_xx-large" onclick={division}></lightning-button-icon>
+   </div>
+  </lightning-card> 
+ </template> 
